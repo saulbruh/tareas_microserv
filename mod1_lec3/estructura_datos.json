@@ -1,0 +1,38 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Saul Medina",
+      "correo": "saul@example.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Carlos Perez",
+      "correo": "carlos@example.com"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos P\u00e9rez",
+      "correo": "carlos@example.com"
+    },
+    {
+      "id": 4,
+      "nombre": "Janiel Rodriguez",
+      "correo": "janiel@example.com"
+    }
+  ],
+  "productos": [
+    {
+      "id": 101,
+      "nombre": "Computadora",
+      "precio": 999.99,
+      "stock": 12
+    },
+    {
+      "id": 102,
+      "nombre": "Headphones",
+      "precio": 25.5,
+      "stock": 40
+    }
+  ]
+}
