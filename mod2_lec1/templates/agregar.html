@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Agregar Receta{% endblock %}
+
+{% block content %}
+    <h2>Agregar Nueva Receta</h2>
+    <form class="form-agregar" action="{{ url_for('agregar') }}" method="post">
+        <label for="nombre">Nombre de la receta:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br><br>
+
+        <button class="boton-agregar type="submit">Agregar Receta</button>
+        <a href="{{ url_for('index') }}" class="boton-agregar" style="margin-left: 10px;">Cancelar</a>
+    </form>
+{% endblock %}

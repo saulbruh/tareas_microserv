@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Recetas{% endblock %}
+
+{% block content %}
+    <div class="recetas-header">
+      <h2>Recetas Guardadas</h2>
+      <a href="{{ url_for('agregar') }}" class="boton-agregar">+ Agregar Receta</a>
+    </div>
+    <ul>
+        {% for receta in recetas %}
+            <li>
+                <h3>{{ receta.nombre }}: </h3>
+                <p>{{ receta.descripcion }}</p>
+                <div class="boton-eliminar-box">
+                  <form action="{{ url_for('eliminar', indice=loop.index0) }}" method="post" style="display:inline;">
+                      <button type="submit" class="boton-eliminar"><i data-feather="x"></i></button>
+                  </form>
+                </div>
+            </li>
+        {% else %}
+            <li>No hay recetas aún.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

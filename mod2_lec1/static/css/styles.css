@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 20px;
+}
+
+.recetas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  font-size: 0.9em;
+  color: #777;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.form-agregar {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.boton-agregar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #777;
+
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.boton-agregar:hover {
+  background-color: #333;
+
+}
+
+footer {
+  margin-top: auto;
+}
+
+.boton-eliminar-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.boton-eliminar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-eliminar:hover {
+  background-color: #c0392b;
+}
