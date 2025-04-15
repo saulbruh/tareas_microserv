@@ -1,0 +1,15 @@
+VALIDACIONES NECESARIAS PARA FORMULARIOS PROYECTO CAPSTONE
+
+Formulario: Registro de Usuario
+- Nombre de usuario: obligatorio, mínimo 3 caracteres.
+- Correo electrónico: obligatorio, debe tener formato válido.
+- Contraseña: obligatoria, mínimo 6 caracteres.
+- Confirmar contraseña: obligatorio, debe coincidir con la contraseña.
+
+Formulario: Inicio de Sesión
+- Correo electrónico: obligatorio, debe tener formato válido.
+- Contraseña: obligatoria.
+
+Formulario: Crear Publicación
+- Título: obligatorio, mínimo 5 caracteres.
+- Contenido: obligatorio, no puede estar vacío.
