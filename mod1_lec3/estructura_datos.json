@@ -19,6 +19,11 @@
       "id": 4,
       "nombre": "Janiel Rodriguez",
       "correo": "janiel@example.com"
+    },
+    {
+      "id": 5,
+      "nombre": "Janiel Rodriguez",
+      "correo": "janiel@example.com"
     }
   ],
   "productos": [
