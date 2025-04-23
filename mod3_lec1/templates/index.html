@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>User</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <h1>Página de usuario</h1>
+  <div class="page-content">
+    <h2>Bienvenido, {{ usuario }}!</h2>
+    <p>Tu rol es: <strong>{{ rol }}</strong></p>
+    <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+  </div>
+</div>
+{% endblock %}
