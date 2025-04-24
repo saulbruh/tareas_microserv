@@ -1,0 +1,29 @@
+### Admin Login
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+  "username": "admin"
+}
+
+### User Login
+POST http://127.0.0.1:5000/login
+Content-Type: application/json
+
+{
+  "username": "user"
+}
+
+### Logout
+GET http://127.0.0.1:5000/logout
+Cookie: [MISMA COOKIE DE SESSION]
+
+----------------------------------------------------
+
+### Ruta de admin
+GET http://127.0.0.1:5000/admin
+Cookie: [COPIA EL VALOR DE LA COOKIE "session" DESPUÉS DE LOGUEARTE]
+
+### Ruta de user
+GET http://127.0.0.1:5000/user
+Cookie: [COPIA EL VALOR DE LA COOKIE "session" DESPUÉS DE LOGUEARTE]
